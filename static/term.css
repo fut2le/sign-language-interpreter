@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #434343, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #434343, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+}
+
+h1 {
+    font-size: 54px;
+    background: -webkit-linear-gradient(rgb(55, 173, 104), rgb(213, 245, 242));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    font-size: 20px;
+}
+
+hr {
+    height: 2px!important;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+.mid {
+    font-size: 20px;
+}
+
+i.fa-american-sign-language-interpreting {
+    font-size: 26px;
+}
+
+img {
+    border: 3px solid white;
+    border-radius: 10px;
+}

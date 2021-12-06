@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign LANGUAGE INTERPRETER</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/term.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='term.css') }}">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="fas fa-american-sign-language-interpreting"></i> Connect</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Model</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="head text-center">SIGN LANGUAGE INTERPRETER</h1>
+        <hr>
+        <p class="w-75 m-auto">Sign language is an incredible advancement that has grown over the years. Unfortunately, there are some drawbacks that have come along with this language. Not everyone knows how to interpret a sign language when having a conversation with a deaf
+            and dumb person. <br>There is always a need to communicate using sign language. One finds it hard to communicate without an interpreter. To solve this, we need a product that is versatile and robust. We need to convert the sign language so
+            that it is understood by common people and will help them to communicate without any barriers. The main purpose of this project is to eliminate the barrier between the deaf and dumb and the rest.
+        </p>
+        <div class="mt-3 text-center cen">
+            <img src="../static/images/Signs.jpg" alt="">
+        </div>
+        <div class="mt-5 mid">
+            <h3 class="text-center">Reasons</h3>
+            <ul class="w-75 m-auto">
+                <li>1 Million Deaf people who use American Sign Language as their primary language.</li>
+                <li>30 Million Americans hear at 40 decibels (dB) or higher. “Normal” hearing ranges from 0 to 20 dB.</li>
+                <li>70 Million Deaf people around the world use sign language • 98% of Deaf people this world do not receive education in sign language.</li>
+                <li>70% of Deaf people don’t work or are underemployed.</li>
+                <li>72% of families do not sign with their Deaf children. </li>
+                <li>1 in 4 Deaf people have quit a job due to discrimination.</li>
+            </ul>
+        </div>
+        <div class="text-center my-4">
+            <a href="/using" class="btn btn-lg btn-success"><i class="fas fa-play-circle"></i> Use Now!</a>
+        </div>
+    </div>
+</body>
+
+</html>
