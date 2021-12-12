@@ -16,6 +16,12 @@
             padding: 0px;
         }
         
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        
         label {
             font-size: 30px;
         }
@@ -88,10 +94,15 @@
             </div>
         </div>
     </nav>
-    <div class="row">
-        <h3 class="text-center">Enter the Gesture Image</h3>
-        <div class="col-sm-6 offset-3">
+    </nav>
+    <div class="container text-center">
+        <h3>Make a gesture</h3>
+        <video id="video" width="600" height="500" autoplay></video>
+
+        <!-- <div class="col-sm-6 offset-3">
             <form action="/check" novalidate method="post">
+                <input type="file" accept="image/*" capture="camera">
+                <input type="file" name="image" accept="image/*" capture="user">
                 <div class=" mb-2 ">
                     <label for="lang" class="form-label">Select Language</label>
                     <select name="langa" id="lang">
@@ -109,13 +120,24 @@
                 <button class="btn btn-lg btn-success ">Check</button>
                 <a class="btn btn-lg btn-danger mx-2 " href="/ ">Back</a>
             </form>
-        </div>
+        </div> -->
     </div>
     <div class="container mt-5 text-center">
         <h2><i class="fas fa-sign-language"></i> Gestures</h2>
         <p>This image depicts the various hand Gestures representing the English alphabets</p>
         <img src="../static/images/Signs.jpg" alt="#">
     </div>
+    <script>
+        let video = document.querySelector("#video");
+        if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+            navigator.mediaDevices.getUserMedia({
+                video: true
+            }).then((data) => {
+                video.srcObject = data;
+                video.play();
+            });
+        }
+    </script>
 </body>
 
 </html>
