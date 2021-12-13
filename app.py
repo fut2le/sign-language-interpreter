@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect
 from flask.wrappers import Request
+import main as m
 
 app = Flask(__name__)
 
@@ -9,6 +10,7 @@ def home():
 
 @app.route('/using')
 def using():
+    m.main()
     return render_template("using.html")
 
 @app.route('/about')
